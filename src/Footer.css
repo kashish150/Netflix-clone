@@ -1,0 +1,42 @@
+.flexfooter {
+  display: flex;
+  max-width: 70%;
+  justify-content: space-between;
+  color: grey;
+  background-color: black;
+}
+.icon {
+  background-color: black;
+  padding: 0;
+  height: 50px;
+}
+.socialicons {
+  display: flex;
+  cursor: pointer;
+}
+.footer1 ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+.rowcard {
+  height: 300px;
+}
+ul {
+  list-style-type: none;
+}
+.fli {
+  padding: 10px;
+  border-radius: 50px;
+}
+.fli:hover {
+  background-color: grey;
+  color: black;
+}
+.footerwidth {
+  max-width: 70%;
+  margin: auto;
+}
+.searchicon {
+  height: 30px;
+  background-color: inherit;
+}
