@@ -37,21 +37,20 @@ else{console.log(movie.title)
     })
    
  }, []);
+function onhovermovie(){
 
+}
 
  return <div className="row">
      <h1>{props.title}</h1>
        <div className={props.searchpage?"searchpagecontainer":"container"}>
           {
             movies.map(movie=>(
-          <div className="rowcard">
-            
-             <img className="revealer"  key={movie.id} onClick={()=>handleclick(movie)}
-                 className={props.searchpage?"searchpagerow":`row_poster ${props.largerow && "largeposter"}`} src={`https://image.tmdb.org/t/p/original/${props.largerow ? movie.poster_path:movie.backdrop_path||movie.poster_path}`} alt=""/>
-                   {!props.largerow && <div className="data"><p>{movie.name||movie.title}</p></div>}
-                 </div>
-           
-            )
+      <div className={props.largerow?"rowcard":"rowcar"}>
+             <img className="revealer"  key={movie.id} onMouseOver={()=>onhovermovie} onClick={()=>handleclick(movie)}
+                 className={`row_poster ${props.largerow && "largeposter"}`} src={`https://image.tmdb.org/t/p/original/${props.largerow ? movie.poster_path:movie.backdrop_path||movie.poster_path}`} alt=""/>
+                 {  props.searchpagerow && <div className="data"><p>{movie.name||movie.title}</p></div>}
+                </div>   )
             
             )
 

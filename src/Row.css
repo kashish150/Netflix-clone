@@ -1,8 +1,10 @@
 .row_poster {
-  height: 180px;
+  height: 150px;
   transition: transform 450ms;
   margin-right: 10px;
   padding: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   border-radius: 20px;
 }
 .container {
@@ -24,23 +26,18 @@
 }
 .row {
   margin-left: 25px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-.rowcard {
+.rowcar {
   transition: transform 450ms;
   margin: 0;
   padding: 0;
-  height: 200px;
 }
-.rowcard:hover {
-  transform: scale(1.2);
-}
-.rowcard > p {
-  margin: 0;
-  padding: 0;
-  padding-left: 25px;
+.rowcar:hover {
+  transform: scale(1.1);
 }
 .container {
-  height: 300px;
   margin: 0;
   padding: 0;
 }
@@ -56,15 +53,20 @@
   border-radius: 20px;
 }
 .searchpagerow {
-  height: 180px;
   transition: transform 450ms;
   margin-right: 10px;
-  padding: 10px;
   overflow-x: scroll;
   border-radius: 20px;
 }
 .searchpagecontainer {
+  margin-bottom: 0;
   margin-top: 40px;
   display: grid;
   grid-template-columns: auto auto auto auto;
+}
+.rowcar {
+  margin: 0;
+  padding: 0;
+  padding-left: 25px;
+  height: 180px;
 }
