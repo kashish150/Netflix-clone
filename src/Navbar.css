@@ -85,8 +85,49 @@ li {
   cursor: pointer;
 }
 @media only screen and (max-width: 1000px) {
+  .navlogo {
+    width: 120px;
+    margin-left: 5px;
+    padding-top: 5px;
+    margin-right: 5px;
+  }
   .navul,
   .logsig {
     display: none;
+  }
+
+  .row_poster {
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+  }
+  .rowcar {
+    padding-left: 3px;
+    padding: 0;
+    margin: 0;
+  }
+  .row {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .banner {
+    color: white;
+    object-fit: contain;
+    background-position: center;
+    height: 600px;
+  }
+  .navbutton {
+    width: 70px;
+  }
+  .largeposter {
+    height: 238px;
+    padding: 8px;
+  }
+  .searchpagecontainer {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
 }

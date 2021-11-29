@@ -31,7 +31,7 @@ function Navbar(props){
     return <div className={`navbar ${scroll && "navblack"}`}>
      <div className="logoul">
     <div>
-    <img  className="navlogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1200px-Netflix_2015_logo.svg.png"/>
+    <Link exact to="/">  <img  className="navlogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1200px-Netflix_2015_logo.svg.png"/></Link>
     </div>
     <div>
         <ul className="navul">
